@@ -80,7 +80,7 @@ module ``about the stock example`` =
             |> List.map splitCommas
             |> List.map getTripel
             |> List.map calculateDiff
-            |> List.maxBy (fun x -> snd x)
+            |> List.maxBy snd
             |> fst
         
         AssertEquality "2012-03-13" result
